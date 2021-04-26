@@ -1,27 +1,38 @@
-# KryonHomeTest
+# Kryonsystems FrontEnd Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
-## Development server
+## Instructions
+This test application is a skeleton.  
+On one hand you need to fill the missing functionality.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+We have made a mock server using json-server (for more information https://github.com/typicode/json-server),  
+after running the mock server you can Users resources.
 
-## Code scaffolding
+####IMPORTANT: You should be using ngrx to save the data
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+####Show us your best and use every best practices you know.
 
-## Build
+### How to run:
+1. Run npm run start-server to start a mock server using json-server,
+   for more information https://github.com/typicode/json-server
+2. Run ng serve to run the application
+3. You are good to go!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## What should I do?
+1. Fetch users functionality and display them in a list, with following properties:
+    1. full name
+    2. age
+2. Implement the search functionality
+   please refer to https://github.com/typicode/json-server
+   to understand how to filter.
+3. Implement animation color change on mouse hover each user in the list,
+   (each user have a color property)
+4. Implement delete user, "delete icon" should be shown on mouse hover the user.
+5. alongside the age of the user, calculate his fibonacci age (example: age:8 -> fibonacci(8) = 21). should be calculated in UI and not extend the user model.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### bonus:
+1. Implement user details card, should open/close when clicking on +/- icon on right side of user.
+    1. should display avatar image depending on gender
+    2. should display all other user properties.
+2. Highlight the search text in the user list.
